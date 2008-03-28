@@ -1,0 +1,4 @@
+*.log
+/test
+*.tmproj
+spec/aws_keys.yml
