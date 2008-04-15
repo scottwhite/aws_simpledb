@@ -155,7 +155,7 @@ describe "working with attributes" do
   it "should find by query expression for date" do
     item = AWSSimpleDB::Item.new
     item.domain=@domain_name
-    # sleep 3  # have to wait for simpledb to catch up
+    sleep 3  # have to wait for simpledb to catch up
     values = item.find_by_query("['dob'>'2008-01-15']")
     # values = item.find_by_query("['dob'='']")    
     values.should have(4).items
