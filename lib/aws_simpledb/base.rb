@@ -34,7 +34,7 @@ module AWSSimpleDB
       data = nil
       s_time = Time.now
       begin
-        count = (count)?+1:0
+        count = (count)?count+1:0
         #build path
         url = build_url_request(params)
         # http = Net::HTTP.new(@host,@port)
